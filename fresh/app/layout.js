@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <Link href="/">홈</Link>
           <Link href="/list">List</Link>
         </div>
-        {children}
+        {children} {/* page.js 들어가는 부분 */}
       </body>
     </html>
   );
