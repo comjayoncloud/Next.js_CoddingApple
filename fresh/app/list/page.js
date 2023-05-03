@@ -22,6 +22,13 @@ export default function List() {
             >
               +
             </button>
+            <button
+              onClick={() => {
+                setNumber(number - 1);
+              }}
+            >
+              -
+            </button>
           </div>
         );
       })}
