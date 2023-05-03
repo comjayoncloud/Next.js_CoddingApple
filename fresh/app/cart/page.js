@@ -1,12 +1,12 @@
-import age from "./data";
-
+// import age from "./data";
+import Hello from "./hello";
 export default function Cart() {
-  const age = age;
   return (
     <div>
       <h4 className="title">Cart</h4>
       <CartItem />
       <CartItem />
+      <Hello />
     </div>
   );
 }
