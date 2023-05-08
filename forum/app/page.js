@@ -4,5 +4,10 @@ export default async function Home() {
   const db = client.db("forum");
   let result = await db.collection("post").find().toArray();
 
-  return <div>{result[0].title}</div>;
+  return (
+    <div>
+      {result[0].title}
+      {result[0].content}
+    </div>
+  );
 }
