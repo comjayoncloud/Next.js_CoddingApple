@@ -8,9 +8,9 @@ export default async function List() {
   return (
     <div className="list-bg">
       {result &&
-        result.map((data) => {
+        result.map((data, index) => {
           return (
-            <div className="list-item">
+            <div className="list-item" key={index}>
               <h4>{data.title}</h4>
               <p>{data.content}</p>
             </div>
